@@ -1,0 +1,278 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-29T19:40:01.443Z",
+        "line": 5,
+        "name": "Criar usuário",
+        "description": "",
+        "id": "teste-rest-api-de-usuários;criar-usuário",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1134912000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "defino os parametros POST",
+            "match": {
+              "location": "UsuariosSteps.defino_os_parametros_POST()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5446173800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "envio uma solicitacao HTTP POST",
+            "match": {
+              "location": "UsuariosSteps.envio_uma_solicitacao_HTTP_POST()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 495931400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "recupero id do empregado",
+            "match": {
+              "location": "UsuariosSteps.recupero_id_do_empregado()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 32773900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "recebo status 202",
+            "match": {
+              "arguments": [
+                {
+                  "val": "202",
+                  "offset": 14
+                }
+              ],
+              "location": "UsuariosSteps.receboStatus(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-29T19:40:08.611Z",
+        "line": 11,
+        "name": "Listar usuário cadastrado",
+        "description": "",
+        "id": "teste-rest-api-de-usuários;listar-usuário-cadastrado",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 906900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "faço a autenticação",
+            "match": {
+              "location": "UsuariosSteps.façoAAutenticação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1865702200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio a solicitação HTTP GET do usuário cadastrado",
+            "match": {
+              "location": "UsuariosSteps.envio_a_solicitação_HTTP_GET_do_usuário_cadastrado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1769300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "recebo status 202",
+            "match": {
+              "arguments": [
+                {
+                  "val": "202",
+                  "offset": 14
+                }
+              ],
+              "location": "UsuariosSteps.receboStatus(int)"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 51495400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "localizo usuário",
+            "match": {
+              "location": "UsuariosSteps.localizo_usuário()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-29T19:40:10.535Z",
+        "line": 17,
+        "name": "Listar todos os usuários",
+        "description": "",
+        "id": "teste-rest-api-de-usuários;listar-todos-os-usuários",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1041900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "faço a autenticação",
+            "match": {
+              "location": "UsuariosSteps.façoAAutenticação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1199505000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "envio a solicitação HTTP GET de todos usuários",
+            "match": {
+              "location": "UsuariosSteps.envio_a_solicitação_HTTP_GET_de_todos_usuários()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 606451200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "recebo status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "UsuariosSteps.receboStatus(int)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-29T19:40:12.345Z",
+        "line": 22,
+        "name": "Alterar usuário cadastrado",
+        "description": "",
+        "id": "teste-rest-api-de-usuários;alterar-usuário-cadastrado",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1287600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "defino os parametros PUT",
+            "match": {
+              "location": "UsuariosSteps.defino_os_parametros_PUT()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1132695700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "envio a solicitação HTTP PUT do usuário cadastrado",
+            "match": {
+              "location": "UsuariosSteps.envio_a_solicitação_HTTP_PUT_do_usuário_cadastrado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1209000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "recebo status 202",
+            "match": {
+              "arguments": [
+                {
+                  "val": "202",
+                  "offset": 14
+                }
+              ],
+              "location": "UsuariosSteps.receboStatus(int)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Teste REST api de Usuários",
+    "description": "",
+    "id": "teste-rest-api-de-usuários",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/usuario_api.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
